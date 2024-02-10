@@ -1,0 +1,379 @@
+.stanga{
+    background-color: #363740;
+    font-family: 'Arvo', serif;
+    color: #f7f8fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+
+.dreapta{
+    background-color: #f7f8fc;
+    font-family: 'Arvo', serif;
+    display: grid;
+    grid-template-rows: 90px 2fr 5fr 4fr;
+}
+
+body{
+    margin: 0px;
+    height: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100%;
+}
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
+ 
+ body {
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+ }
+
+ .utilitati, .setari{
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a4a6b3;
+    
+ }
+.textdashboard{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5em;
+    user-select: none;
+}
+
+.hh{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    width: 100%;
+}
+
+img{
+    height: 50px;
+    margin-right: 10px;
+    width: auto;
+}
+
+.utilitati:hover{
+    background-color: #3e4049;
+    cursor: pointer;
+    color: #dde2ff;
+    border-left: 30px solid #dde2ff;
+    transition: 0.5s;
+}
+.setari:hover{
+    background-color: #3e4049;
+    cursor: pointer;
+    color: #dde2ff;
+    border-left: 30px solid #dde2ff;
+    transition: 0.5s;
+}
+
+.textdashboard:hover{
+    cursor: pointer;
+    scale: 1.15;
+    transition: 0.3s;
+}
+
+.utilitati:not(:hover){
+    border-left: 0px solid;
+    transition: 0.3s;
+}
+
+.setari:not(:hover){
+    border-left: 0px solid;
+    transition: 0.3s;
+}
+
+.textdashboard:not(:hover){
+    scale: 1;
+    transition: 0.3s;
+}
+
+#overview{
+    display: grid;
+    grid-template-columns: 1fr 5fr 0.5fr 1.3fr;
+}
+
+
+i{
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+.vv{
+    justify-self: center;
+    align-self: center;
+    font-size: 2em;
+    user-select: none;
+}
+
+.search{
+    justify-content: space-evenly;
+    align-self: center;
+    font-size: 1.5em;
+    display: flex;
+    margin-top:6px;
+}
+.notif{
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5em;
+}
+
+.profile{
+    justify-self: center;
+    align-self: center;
+    display: flex;
+}
+.nume{
+    justify-self: start;
+    align-self: center;
+    user-select: none;
+}
+#eu{
+    justify-self: end;
+    align-self: center;
+    border-radius: 50%;
+    border: 3px solid #dfe0eb;
+    margin-left: 24px;
+}
+
+#eu:hover{
+    border: 3px solid #3751ff;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+#eu:not(:hover){
+    border: 3px solid #dfe0eb;
+    transition: 0.6s;
+}
+
+#unu:hover,#doi:hover{
+    color:#3751ff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+#doi{
+    justify-content: end;
+    display: flex;
+}
+
+input{
+    width: 90%;
+    border: 0;
+    border-bottom: 2px solid rgb(165, 165, 165);
+    outline: 0;
+    background: transparent;
+    font-size: 18px;
+    margin-top: -1px;
+}
+
+input:focus{
+    border-bottom: 2px solid #3751ff;
+    transition: 0.7s;
+}
+
+input:not(:focus){
+    border-bottom: 2px solid rgb(165, 165, 165);
+    transition: 0.5s;
+}
+
+#stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.stat{
+    border:3px solid rgb(165, 165, 165);
+    border-radius: 10%;
+    width: 60%;
+    justify-self: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat:hover{
+    scale: 1.07;
+    border:3px solid  #3751ff;
+    transition: 0.5s;
+    color: #3751ff;
+}
+
+.stat:not(:hover){
+    scale: 1;
+    border:3px solid rgb(165, 165, 165);
+    transition: 0.5s;
+}
+
+.nr{
+    font-size: 50px;
+}
+
+#charts{
+    display: flex;
+    height: 310px;
+    border:3px solid rgb(165, 165, 165);
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 1.5%;
+    align-content: center;
+    margin-right: 0;
+    margin-left: 5%;
+}
+
+#chr{
+    height: 310px;
+    width: auto;
+    
+    border-radius: 15px;
+}
+
+#charts:hover{
+    scale: 1.02;
+    transition: 0.5s;
+    border:3px solid  #3751ff;
+}
+
+#charts:not(:hover){
+    scale: 1;
+    transition: 0.5s;
+    border:3px solid rgb(165, 165, 165);
+}
+
+.textinainte{
+    font-size: 24px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.containerptcharts{
+    justify-content: center;
+    align-self: center;
+}
+
+#drpt{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 26px;
+    height: 310px;
+    width: auto;
+    overflow: auto;
+}
+
+.sus{
+    justify-self: center;
+    align-self: center;
+}
+.jos{
+    justify-self: center;
+    align-self: center;
+}
+
+
+#tasks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.unresolved,.defacut{
+    width: 80%;
+    height: 78%;
+    border:3px solid rgb(165, 165, 165);
+    border-radius: 20px;
+    justify-self: center;
+    align-self: center;
+}
+
+.unresolved:hover,.defacut:hover{
+    scale: 1.04;
+    border:3px solid  #3751ff;
+    transition: 0.5s;
+}
+
+.unresolved:not(:hover),.defacut:not(:hover){
+    scale: 1;
+    border:3px solid rgb(165, 165, 165);
+    transition: 0.5s;
+}
+
+.unresolved{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.hdr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    border-bottom: 2px solid rgb(189, 187, 187);
+}
+
+.prim{
+    justify-self: start;
+    align-self: center;
+    margin: 4%;
+}
+.secund{
+    justify-self: end;
+    align-self: center;
+    margin: 4%;
+    text-decoration: none;
+    color: #3751ff;
+}
+
+.taskc{
+    justify-self: start;
+    align-self: center;
+    width: 100%;
+    
+}
+
+#f{
+    margin-left: 2%;
+}
+.defacut{
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+}
+
+.haide{
+    align-self: center;
+    justify-self: start;
+    display: flex;
+    margin-left: 2%;
+}
+
+.textdupa{
+    margin-left: 5%;
+}
+
+input[type=checkbox]{
+    scale: 1.5;
+    border-radius: 50px;
+}
+
+input[type=checkbox]:checked{
+    scale: 1.5;
+    background-color: green;
+}
