@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="text">Etch-A-Sketch</div>
+           <div class="treaba">
+                <div class="container"></div>
+                <div class="culori">
+                    <button class="butonski" id="negru" onclick="changeColor('black')">B</button>
+                    <button class="butonski" id="alb" onclick="changeColor('white')">E</button>
+                    <button class="butonski" id="random" onclick="changeColor('rand')">R</button>
+                    <div class="picker">
+                        <input type="color" id="dama">
+                        <button class="butonski" id="mdea" onclick="changeColor(document.getElementById('dama').value)">H</button>
+                    </div>
+                </div>
+            </div>
+            <input type="text" class="dorinta" placeholder="Size" id="ciardorinta">
+            <div class="text" id="preamare"></div>
+              <button id="ofdomane" onclick="changeSize(document.getElementById('ciardorinta').value)">CHANGE SIZE/RESET</button>
+            
+</body>
+<script src="script3.js"></script>
+</html>
